@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.2.1.min.js"></script>  
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		<link href="css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap.min.new.css" />
+		<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h4>三、&nbsp;组织机构人员配备情况</h4>
+			<div class="rank second-title">1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="letter-spancing fontWeight">医院感染管理专职人员人数：</span>
+			   <input type="text" class="input-underline" name="" value="" />
+			</div>			
+			<div class="second-title" style="position: absolute;">1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="letter-spancing fontWeight">医院感染管理专职人员名单：（若人员多，请填写后添加附页）</span>
+			   	<button class="add">+</button><button class="sub">-</button>			   		
+			   	<!--人员登记表格-->
+			   	<table class="peopleList">
+			   	  <tr class="delrow">
+			   		<td>人员姓名</td>
+			   		<td>职位 </td>
+			   		<td>专业</td>	
+			   		<td>学历</td>
+			   		<td>从事院感(年)</td>
+			   		<td>职称</td>			   		
+			   	  </tr>
+			   	  <tr class="delrow">
+			   	   	<!--人员姓名-->
+			   		<td><input type="text" class="input-name" name="" value="" /></td>
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr><td><input type="checkbox" class="" name="" value="" />主任 </td></tr>
+			   				<tr><td><input type="checkbox" class="" name="" value="" />副主任 </td></tr>
+			   				<tr><td><input type="checkbox" class="" name="" value="" />科员 </td></tr>
+			   			</table>
+			   	    </td>
+			   	    <!--职位-->
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />临床 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />护理 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />检验 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />公卫 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />药学 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />影像 </td>
+			   				</tr>
+			   			</table>
+			   		</td>
+			   		<!--学历-->
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />博士 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />硕士 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />本科 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />专科 </td>
+			   				</tr>
+			   				<tr>
+			   					<td colspan="2"><input type="checkbox" class="" name="" value="" />专科以下 </td>
+			   				</tr>
+			   			</table>
+			   		</td>
+			   		<!--从事院感(年)-->
+			   		<td><input type="text" class="input-name" name="" value="" /></td>
+			   		<!--职称-->
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />正高 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />副高 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />中级 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />初级 </td>
+			   				</tr>
+			   			
+			   			</table>
+			   		</td>
+			   	  </tr>
+			   	  <tr class="delrow">
+			   	   	<!--人员姓名-->
+			   		<td><input type="text" class="input-name" name="" value="" /></td>
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr><td><input type="checkbox" class="" name="" value="" />主任 </td></tr>
+			   				<tr><td><input type="checkbox" class="" name="" value="" />副主任 </td></tr>
+			   				<tr><td><input type="checkbox" class="" name="" value="" />科员 </td></tr>
+			   			</table>
+			   	    </td>
+			   	    <!--职位-->
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />临床 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />护理 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />检验 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />公卫 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />药学 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />影像 </td>
+			   				</tr>
+			   			</table>
+			   		</td>
+			   		<!--学历-->
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />博士 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />硕士 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />本科 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />专科 </td>
+			   				</tr>
+			   				<tr>
+			   					<td colspan="2"><input type="checkbox" class="" name="" value="" />专科以下 </td>
+			   				</tr>
+			   			</table>
+			   		</td>
+			   		<!--从事院感(年)-->
+			   		<td><input type="text" class="input-name" name="" value="" /></td>
+			   		<!--职称-->
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />正高 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />副高 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />中级 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />初级 </td>
+			   				</tr>
+			   			
+			   			</table>
+			   		</td>
+			   	  </tr>
+			   	  <tr class="delrow">
+			   	   	<!--人员姓名-->
+			   		<td><input type="text" class="input-name" name="" value="" /></td>
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr><td><input type="checkbox" class="" name="" value="" />主任 </td></tr>
+			   				<tr><td><input type="checkbox" class="" name="" value="" />副主任 </td></tr>
+			   				<tr><td><input type="checkbox" class="" name="" value="" />科员 </td></tr>
+			   			</table>
+			   	    </td>
+			   	    <!--职位-->
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />临床 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />护理 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />检验 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />公卫 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />药学 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />影像 </td>
+			   				</tr>
+			   			</table>
+			   		</td>
+			   		<!--学历-->
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />博士 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />硕士 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />本科 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />专科 </td>
+			   				</tr>
+			   				<tr>
+			   					<td colspan="2"><input type="checkbox" class="" name="" value="" />专科以下 </td>
+			   				</tr>
+			   			</table>
+			   		</td>
+			   		<!--从事院感(年)-->
+			   		<td><input type="text" class="input-name" name="" value="" /></td>
+			   		<!--职称-->
+			   		<td>
+			   			<table class="table-noline">
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />正高 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />副高 </td>
+			   				</tr>
+			   				<tr>
+			   					<td><input type="checkbox" class="" name="" value="" />中级 </td>
+			   					<td><input type="checkbox" class="" name="" value="" />初级 </td>
+			   				</tr>
+			   			
+			   			</table>
+			   		</td>
+			   	  </tr>
+			   </table>
+			   <div  id="" style="float: left;margin:30px 0 10px 0;">
+				<input class="btn " id="" type="submit" value="返回到首页" />				
+			   </div>	
+				<!--<div style="float: left;" id=""  >
+					<input class="btn " id="" type="submit" value="暂存" />
+				</div>-->
+				<div  id="" style="float: right;margin: 30px 0 10px  0;">
+					<input class="btn " id="" type="submit" value="下一步>>" />
+				</div>
+				<div id="" style="float: right;margin:30px 20px 10px 0;" >
+					<input class="btn " id="" type="submit" value="<<上一步" />
+				</div>
+			</div>			
+		</div>
+	</body>
+</html>
+<!--<script type="text/javascript">
+	$('body').on('click','.add', function(){
+	alert(1);   
+});
+</script>-->
